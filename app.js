@@ -93,10 +93,12 @@ class NotifyDialNumber extends Observer{
     }
 }
 
+const phone = new Telephone();
+
 let observer1 = new PrintNumber("John")
 let observer2 = new NotifyDialNumber("Adaobi")
 
-const phone = new Telephone();
+
 
 phone.addObserver(observer1)
 phone.addObserver(observer2)
